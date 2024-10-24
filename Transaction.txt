@@ -1,0 +1,24 @@
+Erstelle eine Funktion:
+
+Definiere eine Funktion, die einen Benutzer in Active Directory erstellt.
+Die Funktion soll einen Parameter für den Benutzernamen akzeptieren.
+Innerhalb der Funktion erstelle eine lokale Variable, die eine Nachricht mit dem Namen des zu erstellenden Benutzers speichert.
+Definiere eine globale Variable, die eine Erfolgsmeldung nach der Erstellung des Benutzers speichert.
+
+Starte eine Transaktion:
+
+Beginne eine Transaktion in PowerShell.
+Verwende die Funktion aus Schritt 1, um mindestens zwei Benutzer zu erstellen.
+
+Simuliere einen Fehler:
+
+Provoziere einen Fehler bei der Erstellung eines der Benutzer, indem du versuchst, einen Benutzer mit einem bereits vorhandenen Benutzernamen zu erstellen.
+
+Verwalte den Fehler:
+
+Fange den Fehler auf und gib die Fehlermeldung aus.
+
+Rolle die Transaktion zurück, sodass keine der Benutzeränderungen wirksam wird.
+Beende die Transaktion:
+
+Wenn keine Fehler aufgetreten sind, schließe die Transaktion erfolgreich ab.
