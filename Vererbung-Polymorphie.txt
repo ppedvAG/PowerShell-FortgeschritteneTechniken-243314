@@ -1,0 +1,19 @@
+Basisklasse Fahrzeug:
+
+Eigenschaften:
+Marke (Typ: string): Die Marke des Fahrzeugs.
+Modell (Typ: string): Das Modell des Fahrzeugs.
+Baujahr (Typ: int): Das Baujahr des Fahrzeugs.
+
+Methoden:
+FahrzeugInfo(): Gibt eine allgemeine Information über das Fahrzeug aus.
+StarteMotor(): Gibt eine allgemeine Meldung aus, dass der Motor des Fahrzeugs gestartet wurde.
+
+Abgeleitete Klasse Auto:
+
+Zusätzliche Eigenschaft:
+AnzahlTüren (Typ: int): Die Anzahl der Türen des Autos.
+Überschriebene Methode:
+StarteMotor(): Überschreibt die Methode der Basisklasse mit einer spezifischen Meldung, dass der Motor des Autos gestartet wurde.
+Zusätzliche Methode:
+OeffneKofferraum(): Gibt eine Meldung aus, dass der Kofferraum geöffnet wurde.
