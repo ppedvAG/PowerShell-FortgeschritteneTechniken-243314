@@ -1,0 +1,23 @@
+Modulordner erstellen:
+Lege in deinem PowerShell-Modulverzeichnis (C:\Users\<DeinBenutzername>\Documents\WindowsPowerShell\Modules\) einen neuen Ordner an und nenne ihn LibraryModule. Innerhalb dieses Ordners erstellst du einen Unterordner namens 1.0.0 für die Version des Moduls.
+
+Erstellen der Moduldatei:
+Erstelle im LibraryModule\1.0.0-Ordner eine Datei namens LibraryModule.psm1. Dies ist die Hauptdatei deines Moduls, in der du Funktionen definieren und Helper-Skripte laden wirst.
+
+Helper-Skript hinzufügen:
+Lege im LibraryModule\1.0.0-Ordner einen neuen Unterordner namens HelperScripts an. Darin erstellst du eine Datei namens Helper.ps1, die später eine Berechnungsfunktion enthält.
+
+Funktionen erstellen:
+Öffne die Datei LibraryModule.psm1 und füge zwei Funktionen hinzu:
+
+Get-BookInfo: Diese Funktion gibt eine Beschreibung eines Buches (Titel und Autor) aus.
+Get-Double: Eine Funktion im Helper.ps1-Skript, die das Doppelte einer gegebenen Zahl berechnet.
+
+Helper-Skript in das Modul einbinden:
+Lade die Helper-Funktion Get-Double aus Helper.ps1 in LibraryModule.psm1. Verwende dafür $PSScriptRoot, um den Pfad zu Helper.ps1 korrekt anzugeben. Exportiere sowohl Get-BookInfo als auch Get-Double, damit beide Funktionen im Modul verfügbar sind.
+
+Modul-Manifest erstellen:
+Erstelle eine .psd1-Datei in LibraryModule\1.0.0 und benenne sie LibraryModule.psd1. Diese Datei beschreibt die wichtigsten Metadaten des Moduls, wie Name, Version, und Autor. Definiere FunctionsToExport mit den beiden Funktionen Get-BookInfo und Get-Double.
+
+Modul laden und testen:
+Importiere das Modul in PowerShell, um zu testen, ob es funktioniert. Rufe die Funktion Get-BookInfo mit Parametern für Titel und Autor auf, und verwende Get-Double, um das Doppelte einer Zahl zu berechnen.
